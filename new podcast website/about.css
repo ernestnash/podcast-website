@@ -1,0 +1,227 @@
+@font-face {
+    font-family: Allura-Regular;
+    src: url('Allura-Regular.woff'); /* all version packed into one  */
+} 
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Allura-Regular;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right top, #e59a9a, #be8393, #946f85, #6c5c70, #4b4855, #4a4957, #484b59, #464c5a, #5c667d, #7481a2, #8d9cc9, #a7b9f1);
+}
+
+/* .back {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: royalblue;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+    left: -550px;
+    top: -320px;
+}
+.back span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 90%;
+    height: 83%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid royalblue;
+}
+   
+.back span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+}
+   
+.back:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: royalblue;
+}
+   
+.back:hover {
+    color: white;
+}
+   
+.back:active span::before {
+    background: #2751cd;
+} */
+
+
+.container{
+    width: 550px;
+    height: 600px;
+    max-width: 100%;
+    max-height: 83%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+h1,
+h2,
+p{
+text-align: center;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+.avatar {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    top: 20px;
+    left: 60px;
+}
+h2{
+    word-spacing: 4px;
+}
+
+p{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    align-items: center;
+    line-height: 30px;
+}
+
+
+
+body btn{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    background: none;
+    display: flex;
+    align-items: end;
+    justify-content: center;    
+}
+.btn {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    background: #dde1e7;
+    border-radius: 50%;
+    box-shadow: -7px -7px 20px 0 rgba(255, 255, 255, 0.9),
+      7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+  
+.btn:hover {
+    transform: scale(1.1);
+  }
+  
+.btn::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background: #dde1e7;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.btn:hover::before {
+    box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 1),
+      inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+  
+.btn i {
+    position: relative;
+    color: #2b8eaa;
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+}
+  
+.btn:hover i {
+    font-size: 30px;
+}
+
+
+#footer{
+    align-items: flex-end;
+    width: 100%;
+    padding: 1.5em 0 0 0;
+    color: turquoise;
+    cursor: default;
+    text-align: center;
+    vertical-align: baseline;
+}
+#footer .copyright{
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    list-style: none;
+}
+#footer .copyright li{
+    display: inline-block;
+    margin: 0 0 0 0.45em;
+    padding: 0 0 0 0.85em;
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+    line-height: 1;
+}
+
+#footer .copyright li a{
+    color: yellowgreen;
+    text-decoration: none;
+}
+    
+#footer .copyright li a:hover{
+    color: rgb(255, 10, 10);
+}    
+ul{
+    display: flex;    
+    list-style: disc;
+    margin: 0 0 1.5em 0;
+    padding-left: 1em;
+}
+
+
+
+
+@media (max-width: 800px){
+    .avatar{
+        display: none;
+    }
+    
+}
